@@ -4,6 +4,7 @@ import { buttonType } from './type'
 
 
 function Button({children,variant,setText}:buttonType) {
+
   const handleChange=(e:React.ChangeEvent<HTMLInputElement>):void => {
     if (setText) {
       setText(e.target.value)
@@ -14,6 +15,12 @@ function Button({children,variant,setText}:buttonType) {
       setText('')
     }
   }
+  const keyHandler = (e:React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === "Enter" && setText) {
+      setText('')
+    }
+  }
+
 
   return (
     <div>
@@ -27,7 +34,7 @@ function Button({children,variant,setText}:buttonType) {
       <p className='text-white'>{children}</p>
       </button>:
       <div className='flex items-center bg-white rounded-full px-[25px] py-[8px] w-fit h-fit border-black border-2 border-solid'>
-      <input className='bg-white text-black outline-none' onChange={handleChange} type="text" value={children}  placeholder='Profession, position or company' />
+      <input className='bg-white text-black outline-none' onChange={handleChange} onKeyDown={keyHandler} type="text" value={children}  placeholder='Profession, position or company' />
         <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g id="Icon">
         <g id="Group 8">
