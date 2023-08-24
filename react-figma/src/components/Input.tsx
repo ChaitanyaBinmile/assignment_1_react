@@ -1,16 +1,14 @@
-import React, { useState } from 'react'
+import React from 'react';
+import { buttonType } from './type';
 
-function Input() {
-   const [text,setText]=useState("")
+function Input({variant,children}:buttonType) {
 
-   function handleChange(e: React.ChangeEvent<HTMLInputElement>) {
-    setText(e.target.value)
-
-   }
+  console.log(variant,);
+  
   return (
     <div>
             <div className='flex items-center bg-white rounded-full px-[25px] py-[8px] w-fit h-fit border-black border-2 border-solid'>
-            <input className='bg-white text-black outline-none'  type="text" value={text} onChange={handleChange} placeholder='Profession, position or company' />
+            <input className='bg-white text-black outline-none'  type="text" value={children}  placeholder='Profession, position or company' />
             <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g id="Icon">
             <g id="Group 8">

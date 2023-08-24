@@ -1,10 +1,15 @@
 
-
+import { useState } from 'react'
 import Button from './Button'
 
 function Left() {
+  const [text,setText]=useState('')
+
+  function handleChange(e: React.ChangeEvent<HTMLInputElement>) {
+  setText(e.target.value)}
 
 
+ 
   return (
     <div className='flex flex-col gap-[50px] items-start pl-[10px] '>
         <h1 className='text-black text-[59px] font-semibold justify-start content-start'>
@@ -15,8 +20,8 @@ function Left() {
         </p>
         
         <div className='flex gap-5 w-fit '>
-            <Button children='Profession,position or company' variant='grey' />
-            <Button children='Find a job'  variant='secondary'  />
+            <Button children={text} variant='grey' onChange={handleChange} setText={setText} />
+            <Button children='Find a job' variant='secondary' setText={setText} />
         </div>
 
     </div>
