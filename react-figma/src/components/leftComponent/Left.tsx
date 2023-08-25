@@ -1,6 +1,6 @@
 
 import { useState } from 'react'
-import Button from './Button'
+import Button from '../buttonComponent/Button'
 
 function Left() {
   const [text,setText]=useState('')
@@ -12,7 +12,7 @@ function Left() {
  
   return (
     <div className='flex flex-col gap-[50px] items-start pl-[10px] '>
-        <h1 className='text-black text-[59px] font-semibold justify-start content-start'>
+        <h1 className='text-black text-[59px] text-left font-semibold '>
             Head Hunter
         </h1>
         <p className='text-[#676767] text-[32px] font-normal'>

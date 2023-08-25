@@ -2,3 +2,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components{
+    .appCSS{
+        @apply flex flex-col justify-items-start rounded border-[2px] border-solid border-black bg-white h-screen w-screen overflow-x-hidden;
+     }
+    .app_componentCSS{
+         @apply flex flex-col justify-around items-center lg:flex-row gap-[50px] pt-[200px];
+     }
+    .b_first_div{
+       @apply bg-white rounded-full px-[25px] py-[8px] w-fit h-fit border-black border-2 border-solid
+    }
+    .b_first_text{
+        @apply text-black text-xs py-1
+    }
+    .b_second_div{
+        @apply bg-[#D6001C] rounded-full px-[25px] py-[8px] w-fit h-fit
+     }
+     .b_second_text{
+         @apply text-white text-xs py-1
+     }
+     .b_third_div{
+        @apply flex items-center bg-white rounded-full px-[25px] py-[8px] w-fit h-fit border-black border-2 border-solid gap-[2px]
+
+     }
+     .b_third_text{
+         @apply bg-white text-black outline-none
+     }
+     .header{
+        @apply flex justify-between items-center  h-[69px] w-screen rounded-md p-[60px] fixed top-0 lg:p-[80px]
+     }
+     .icon{
+        @apply flex justify-center bg-icon text-center gap-10 items-center
+     }
+     .input{
+        @apply flex items-center bg-white rounded-full px-[25px] py-[8px] w-fit h-fit border-black border-2 border-solid
+     }
+}
