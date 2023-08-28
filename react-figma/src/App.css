@@ -1,6 +1,5 @@
 
 #root {
- 
   font-family: Montserrat;
   margin: 0 auto;
   padding: 0;
@@ -9,8 +8,7 @@
 *{
   font-family: 'Lato', sans-serif;
 font-family: 'Wendy One', sans-serif;
-
-  /* border: 2px solid black; */
+/* border: 2px solid black; */
 }
 
 .logo {
@@ -24,6 +22,7 @@ font-family: 'Wendy One', sans-serif;
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
+  -webkit-filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
 @keyframes logo-spin {
