@@ -6,7 +6,7 @@ export {default as Filter} from "../assets/Filter"
 export{default as IconImg} from "../assets/IconImg"
 
 export {default as Icon } from "../components/iconComponent/Icon"
-export {default as Button } from "../components/buttonComponent/Button"
+export {default as Button } from "../components/ComponentButton/ComponentButton"
 export {default as MobileMenu } from "../components/menuComponent/mobile_menuComponent/MobileMenu"
 
 

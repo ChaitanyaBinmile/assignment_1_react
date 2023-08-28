@@ -20,7 +20,7 @@
         @apply bg-[#D6001C] rounded-full px-[25px] py-[8px] w-fit h-fit
      }
      .b_second_text{
-         @apply text-white text-xs py-1
+         @apply text-white text-xs py-1 outline-none
      }
      .b_third_div{
         @apply flex items-center bg-white rounded-full px-[25px] py-[8px] w-fit h-fit border-black border-2 border-solid gap-[2px]

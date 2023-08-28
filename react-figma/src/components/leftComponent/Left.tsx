@@ -1,6 +1,6 @@
 
 import { useState } from 'react'
-import Button from '../buttonComponent/Button'
+import Button from '../ComponentButton/ComponentButton'
 
 function Left() {
   const [text,setText]=useState('')

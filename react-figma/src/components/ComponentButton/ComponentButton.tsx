@@ -2,7 +2,7 @@
 import { buttonType } from '../../utilities/type'
 import {Filter} from "../../utilities/export_file"
 
-function Button({children,variant,setText}:buttonType) {
+function ComponentButton({children,variant,setText}:buttonType) {
 
   const handleChange=(e:React.ChangeEvent<HTMLInputElement>):void => {
     if (setText) {
@@ -44,4 +44,4 @@ function Button({children,variant,setText}:buttonType) {
   )
 }
 
-export default Button
+export default ComponentButton

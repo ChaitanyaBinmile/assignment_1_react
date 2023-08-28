@@ -2,7 +2,7 @@ import '../App.css'
 import {Left,Header,Right} from "../utilities/export_file"
 
 
-function Home() {
+function HomeScreen() {
   return (
     <div className='appCSS'>
       <Header/>
@@ -16,4 +16,4 @@ function Home() {
   )
 }
 
-export default Home
+export default HomeScreen
