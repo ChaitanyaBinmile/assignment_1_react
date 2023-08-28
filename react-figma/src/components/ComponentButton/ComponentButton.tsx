@@ -1,6 +1,6 @@
 
 import { buttonType } from '../../utilities/type'
-import {Filter} from "../../utilities/export_file"
+import {FilterIcon,keyvalue} from "../../utilities/export_file"
 
 function ComponentButton({children,variant,setText}:buttonType) {
 
@@ -15,7 +15,7 @@ function ComponentButton({children,variant,setText}:buttonType) {
     }
   }
   const keyHandler = (e:React.KeyboardEvent<HTMLInputElement>) => {
-    if (e.key === "Enter" && setText) {
+    if (e.key === keyvalue && setText) {
       setText('')
     }
   }
@@ -34,7 +34,7 @@ function ComponentButton({children,variant,setText}:buttonType) {
       </button>:
       <div className='b_third_div'>
       <input className='b_third_text' onChange={handleChange} onKeyDown={keyHandler} type="text" value={children}  placeholder='Profession, position or company' />
-      <Filter/>
+      <FilterIcon/>
 
 
 </div>

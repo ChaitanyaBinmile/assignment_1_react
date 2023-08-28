@@ -1,5 +1,5 @@
-import '../App.css'
-import {Left,Header,Right} from "../utilities/export_file"
+import '../../App.css'
+import {Left,Header,Right} from "../../utilities/export_file"
 
 
 function HomeScreen() {
