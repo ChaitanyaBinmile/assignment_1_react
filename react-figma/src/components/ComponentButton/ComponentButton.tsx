@@ -1,7 +1,7 @@
 
 import { buttonType } from '../../utilities/type'
-import {keyvalue} from "../../utilities/export_file"
-import {FilterIcon} from "../../assets/exportFile"
+import {keyvalue} from "../../components/index"
+import {FilterIcon} from "../../assets"
 
 function ComponentButton({children,variant,setText}:buttonType) {
 
@@ -10,12 +10,12 @@ function ComponentButton({children,variant,setText}:buttonType) {
       setText(e.target.value)
     }
   }
-  const clickHandler = () => {
+  const handleInputClick = () => {
     if (setText) {
       setText('')
     }
   }
-  const keyHandler = (e:React.KeyboardEvent<HTMLInputElement>) => {
+  const handleInputKey = (e:React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === keyvalue && setText) {
       setText('')
     }
@@ -30,11 +30,11 @@ function ComponentButton({children,variant,setText}:buttonType) {
       <p className='b_first_text'>{children}</p>
       </div>
       :  variant=='secondary' ?
-      <button className='b_second_div' onClick={clickHandler}>
+      <button className='b_second_div' onClick={handleInputClick}>
       <p className='b_second_text'>{children}</p>
       </button>:
       <div className='b_third_div'>
-      <input className='b_third_text' onChange={handleInputChange} onKeyDown={keyHandler} type="text" value={children}  placeholder='Profession, position or company' />
+      <input className='b_third_text' onChange={handleInputChange} onKeyDown={handleInputKey} type="text" value={children}  placeholder='Profession, position or company' />
       <FilterIcon/>
 
 

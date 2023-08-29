@@ -1,17 +1,17 @@
 
-import {Icon,Button,MobileMenu} from "../../utilities/export_file";
+import {IconComponent,ComponentButton,MobileMenuComponent} from "../../components/index";
 
 
-function Header() {
+function ComponentHeader() {
   return (
     <div className='header' >
-      <Icon/>
+      <IconComponent/>
 
-      <MobileMenu/>
+      <MobileMenuComponent/>
 
       <div className='hidden gap-5 lg:flex'>
-        <Button children='Create a resume' variant='primary' />
-        <Button children='Sign In'  variant='secondary' />
+        <ComponentButton children='Create a resume' variant='primary' />
+        <ComponentButton children='Sign In'  variant='secondary' />
       </div>
       
     </div>
@@ -19,4 +19,4 @@ function Header() {
   )
 }
 
-export default Header
+export default ComponentHeader

@@ -1,14 +1,14 @@
 import '../../App.css'
-import {Left,Header,Right} from "../../utilities/export_file"
+import {LeftComponent,ComponentHeader,RightComponent} from "../../components/index"
 
 
-function HomeScreen() {
+function ScreenHome() {
   return (
     <div className='appCSS'>
-      <Header/>
+      <ComponentHeader/>
       <div className='app_componentCSS'>
-        <Left/>
-        <Right/>
+        <LeftComponent/>
+        <RightComponent/>
 
       </div>
 
@@ -16,4 +16,4 @@ function HomeScreen() {
   )
 }
 
-export default HomeScreen
+export default ScreenHome
