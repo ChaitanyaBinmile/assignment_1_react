@@ -1,8 +1,7 @@
-import img from '../assets/desktop.png'
+import img from "../../assets/desktop.png"
+import mobImage from "../../assets/mobile.png"
 
-import mobImage from "../assets/mobile.png"
-
-function Right() {
+function RightComponent() {
   return (
     <div className='overflow-hidden'>
       <img className='hidden overflow-hidden lg:block' src={img} alt="" />
@@ -11,4 +10,4 @@ function Right() {
   )
 }
 
-export default Right
+export default RightComponent

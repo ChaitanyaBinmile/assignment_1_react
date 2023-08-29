@@ -1,6 +1,6 @@
+import Line from '../../../assets/Line4.png';
 
-import Line from '../assets/Line 4.png'
-function Menu_small() {
+function MobileMenuComponent(){
   return (
     <div className='flex gap-[20px]  lg:hidden'>
         <p className='text-black font-[18px] w-[40px]' > Menu</p> 
@@ -13,4 +13,4 @@ function Menu_small() {
   )
 }
 
-export default Menu_small
+export default MobileMenuComponent
