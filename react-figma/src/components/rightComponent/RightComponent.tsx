@@ -1,6 +1,5 @@
-import img from '../assets/desktop.png'
-
-import mobImage from "../assets/mobile.png"
+import img from "../../assets/desktop.png"
+import mobImage from "../../assets/mobile.png"
 
 function Right() {
   return (
