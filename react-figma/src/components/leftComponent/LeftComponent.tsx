@@ -5,7 +5,7 @@ import Button from '../ComponentButton/ComponentButton'
 function Left() {
   const [text,setText]=useState('')
 
-  function handleChange(e: React.ChangeEvent<HTMLInputElement>) {
+  function handleInputChange(e: React.ChangeEvent<HTMLInputElement>) {
   setText(e.target.value)}
 
 
@@ -20,7 +20,7 @@ function Left() {
         </p>
         
         <div className='flex gap-5 w-fit '>
-            <Button children={text} variant='grey' onChange={handleChange} setText={setText} />
+            <Button children={text} variant='grey' onChange={handleInputChange} setText={setText} />
             <Button children='Find a job' variant='secondary' setText={setText} />
         </div>
 
